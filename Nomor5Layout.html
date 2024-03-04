@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sederhana</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        .main-table td {
+            height: 100px;
+        }
+        @media only screen and (max-width: 600px) {
+            .main-table td {
+                height: auto;
+            }
+            .nested-table td {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body background="file:///C:/Users/user/Pictures/Benteng%20Vredeburg/20231112165029_IMG_0539.JPG">
+    <table border="1">
+        <tr>
+            <td width="500" height="100" align="center">
+                <header>
+                    <h2>Belajar Membuat Layout Sederhana dengan HTML dan CSS</h2>
+                </header>
+            </td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td width="500" height="100" align="center">
+                <nav>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="display: inline; margin-right: 10px;"><a href="#C4">Main</a></li>
+                        <li style="display: inline; margin-right: 10px;"><a href="#D4">Article</a></li>
+                        <li style="display: inline; margin-right: 10px;"><a href="#E4">Aside</a></li>
+                        <li style="display: inline;"><a href="#F4">About Me</a></li>
+                    </ul>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td width="250" height="500" align="center">
+                <table border="1">
+                    <tr>
+                        <td width="200" height="400" align="center">
+                            <main>
+                                <a name="C4"></a>
+                                <section align="left">
+                                    <h3>Pengantar HTML</h3>
+                                    <p>Penghantar HTML adalah elemen atau tag yang digunakan untuk menentukan bagaimana sebuah konten atau struktur harus ditampilkan dalam sebuah halaman web. Ini termasuk tag-tag seperti table, div, p, header, footer, dan banyak lagi</p>
+                                </section>
+                                <section align="left">
+                                    <h3>
+                                        Elemen Semantik HTML
+                                    </h3>
+                                    <p>Elemen semantik adalah elemen dalam HTML yang memiliki makna atau arti tertentu yang jelas, dan bukan hanya digunakan untuk tujuan penataan atau penampilan visual. Dengan kata lain, elemen semantik memberikan informasi tentang struktur dan makna konten, sehingga membantu mesin pencari, pembaca layar, dan pengembang web untuk memahami dan menafsirkan konten dengan lebih baik</p>
+                                </section>
+                            </main>
+                            <table border="1">
+                                <tr>
+                                    <td width="150" height="150" align="center">
+                                        <a name="D4"></a>
+                                        <article align="Left" >
+                                            <h3>
+                                                First Article 
+                                            </h3>
+                                            <figure>
+                                                <img src="file:///C:/Users/user/Pictures/Benteng%20Vredeburg/20231112165748_IMG_0572.JPG" alt="Gambar First Article" width="200" height="150" >
+                                            </figure>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus veritatis assumenda dolore aut dolorem reprehenderit sapiente at delectus sunt laborum accusamus facilis, reiciendis non, iure nam nesciunt inventore exercitationem!</p>
+                                        </article>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td width="150" height="20">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="1">
+                                <tr>
+                                    <td width="150" height="150">
+                                        <article align="left">
+                                            <h3>
+                                                Second Article 
+                                            </h3>
+                                            <figure>
+                                                <img src="file:///C:/Users/user/Pictures/Benteng%20Vredeburg/20231112165748_IMG_0572.JPG" alt="Gambar First Article" width="200" height="150" >
+                                            </figure>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus veritatis assumenda dolore aut dolorem reprehenderit sapiente at delectus sunt laborum accusamus facilis, reiciendis non, iure nam nesciunt inventore exercitationem!</p>
+                                        </article>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="245" height="500">
+                <a name="E4"></a>
+                
+                <main align="left">
+                    <h3>
+                        Tutorial Membuat Layout Sederhana
+                    </h3>
+                    <p>Ikuti langkah langkah mudha di bawah ini!</p>
+                    <ul align="left">
+                        <li>Mulai dengan deklarasi tipe dokumen HTML (<!DOCTYPE html>)</li>
+                        <li>Tentukan bahasa dokumen HTML dan atur tampilan awal untuk perangkat mobile</li>
+                        <li>Gunakan tag head untuk menyertakan informasi meta dan tautan ke berkas CSS dan JavaScript</li>
+                        <li>Gunakan tag title untuk menentukan judul halaman</li>
+                        <li>Gunakan tag style untuk menambahkan aturan CSS</li>
+                        <li>Gunakan tag body untuk menempatkan konten utama halama</li>
+                        <li>Gunakan tag body untuk menempatkan konten utama halaman</li>
+                        <li>Gunakan elemen HTML seperti header, nav, main, aside, dan footer untuk mengatur struktur layout.</li>
+                        <li>Gunakan tabel atau tata letak CSS fleksibel untuk menyusun elemen-elemen tersebut</li>
+                        <li>Sesuaikan tampilan dengan media queries agar responsif di berbagai perangkat</li>
+                        <li>Tutup dokumen HTML dengan tag html</li>
+                    </ul>
+                </main>
+                <main align="left">
+                    <h3>Cara Mudah Mengatur Layout di HTML</h3>
+                    <ul>
+                        <li>Gunakan Struktur Dasar HTML:
+                            Mulailah dengan menentukan struktur dasar HTML dengan menggunakan tag html, head, dan body</li>
+                            <li>Gunakan Tag Semantik:
+                                Gunakan tag-tag semantik HTML seperti header, nav, main, section, article, aside, dan footer untuk membagi halaman web menjadi bagian-bagian yang terstruktur</li>
+                            <li>Gunakan CSS untuk Tata Letak (Layout):
+                                Gunakan CSS untuk mengatur tata letak (layout) halaman web, seperti mengatur lebar, tinggi, margin, padding, dan posisi elemen-elemen HTML.</li>
+                            <li>Tambahkan Konten:
+                                Terakhir, tambahkan konten sesuai dengan struktur yang telah ditentukan</li>
+                    </ul>
+                </main>
+                <main>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto deleniti tempora recusandae voluptatum quibusdam corrupti, error quos repellendus tempore sint debitis molestias esse, sapiente non. Facilis harum nobis quis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto deleniti tempora recusandae voluptatum quibusdam corrupti, error quos repellendus tempore sint debitis molestias esse, sapiente non. Facilis harum nobis quis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto deleniti tempora recusandae voluptatum quibusdam corrupti, error quos repellendus tempore sint debitis molestias esse, sapiente non. Facilis harum nobis quis?</p>
+                
+                </main>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td width="500" height="100" align="center">
+                <a name="F4"></a>
+                <footer align="left">
+                    Find me in social media
+                </footer>
+                <ul align="left">
+                    <li><a href="https://www.instagram.com/xbive_" target="_blank">Instagram</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=6289673384911" target="_blank">Whatsapp</a></li>
+                    <li><a href="https://twitter.com/panggilajabell" target="_blank">Twitter</a></li>
+
+                </ul>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
